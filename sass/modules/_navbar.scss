@@ -3,14 +3,37 @@
 .navbar{
     position: fixed;
     width: 100%;
+    background: #434343;
+    padding: 10px 0px;
     font-family: 'Ubuntu', sans-serif;
 }
 
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.max-width{
+    width: 1700px;
+    padding: 0px 80px;
+    margin: auto;
+}
+
 .navbar .logo a img{
-    width: 80px;
+    width: 50px;
     height: auto;
 }
 
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
 .navbar .menu li a{
-    color: #000;   
+    font-size: 18px;
+    color: #fff;   
+    font-weight: 450;
+    margin-left: 25px;
+    letter-spacing: 2px;
 }
