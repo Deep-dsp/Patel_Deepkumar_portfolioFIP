@@ -18,6 +18,8 @@
 
         // current index
         const index = this.wordIndex % this.words.length;
+        console.log(this.wordIndex);
+        console.log(this.words.length);
 
         //  get text of current index
         const fullText = this.words[index];
