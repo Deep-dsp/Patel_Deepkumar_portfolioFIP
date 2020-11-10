@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 
 .navbar{
     position: fixed;
@@ -36,4 +36,9 @@
     font-weight: 450;
     margin-left: 25px;
     letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
 }
