@@ -6,6 +6,8 @@
     // background: #434343;
     padding: 10px 0px;
     font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
 }
 
 .navbar .max-width{
@@ -42,3 +44,5 @@
 .navbar .menu li a:hover{
     color: crimson;
 }
+
+// Burger Menu
