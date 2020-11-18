@@ -1,0 +1,41 @@
+.gallarySection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galTitle{
+
+
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    width: 90%;
+    // background: red;
+    height: 10vh;
+
+    p
+    {
+        font-family: 'roboto', sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        color: #c3c2c2;
+        letter-spacing: 5px;
+
+        padding-top: 20px;
+        position: relative;
+    }
+
+    p::before{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        right: 0;
+        bottom: 0;
+        background-color: ff6f19;
+    }
+
+}

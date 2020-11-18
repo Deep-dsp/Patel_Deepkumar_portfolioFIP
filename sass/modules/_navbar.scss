@@ -4,7 +4,8 @@
     // position: fixed;
     margin: auto;
     width: 90%;
-    // background: #434343;
+    height: 10vh;
+    // background: red;
     padding: 10px 0px;
     font-family: 'Ubuntu', sans-serif;
 
@@ -71,6 +72,7 @@
 
 .toggle .line1{
     transform: rotate(45deg);
+    transition: all 0.3s ease;
 }
 
 .toggle .line2{
@@ -79,17 +81,26 @@
 
 .toggle .line3{
     transform: rotate(-45deg);
+    transition: all 0.3s ease;
 }
 
 
 // Media Queries
 
+@media screen and (max-width: 425px){
+    .burgerMenu{
+        padding-right: 25px;
+    }
+}
+
 @media screen and (max-width: 768px)
 {
+
     .burgerMenu{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        padding-right: 60px;
     }
     
     .burgerMenu .line{
@@ -122,4 +133,11 @@
         opacity: 1;
     }
 
+}
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        display: flex;
+        width: 95%;
+    }
 }
