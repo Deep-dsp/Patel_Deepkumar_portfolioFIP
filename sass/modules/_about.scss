@@ -1,0 +1,88 @@
+.aboutWrap
+{
+    height: 90vh;
+    display: flex;
+}
+
+.aboutContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+
+    // background: red;
+}
+
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex: 1;
+}
+
+// Title
+
+.aboutTitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    // background: red;
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        color: #8f8f8f;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    p::before
+    {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        right: 0;
+        bottom: 0;
+        background-color: #ff6f19;
+    }
+}
+
+// Title End
+
+.myImage{
+    flex: 1;
+    // background: red;
+}
+
+.myImage img
+{
+    width: 30vw;
+    height: auto;
+}
+
+// aboutMe para
+
+.aboutMe {
+    display: flex;
+    width: 50%;
+}
+
+.aboutMe p
+{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 35px;
+}
+
+// aboutMe para Ends
