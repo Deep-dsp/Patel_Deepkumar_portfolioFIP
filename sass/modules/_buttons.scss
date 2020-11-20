@@ -39,3 +39,42 @@
     color: #ffff;
     background-color: #434343;
 }
+
+@media screen and (max-width: 650px)
+{
+    .buttons
+    {
+        width: 90%;
+        margin: auto;
+    }    
+    .button{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .buttons
+    {
+        width: 60%;
+        margin: auto;
+    }    
+}
+
+@media screen and (max-width: 950px)
+{
+    .buttons
+    {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1300px)
+{
+    .buttons
+    {
+        width: 60%;
+        margin: auto;
+    }
+}
