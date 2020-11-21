@@ -40,6 +40,31 @@
     background-color: #434343;
 }
 
+// contact Page Button
+
+.but
+{
+  border: 1px solid #ff6f19;
+  background: none;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  margin:10px;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: #ff6f19;
+  transition: 0.35s ease;
+}
+
+.but:hover{
+    background: #ff6f19;
+    color: white;
+}
+
+// contact Page Button
+
 @media screen and (max-width: 650px)
 {
     .buttons
@@ -51,6 +76,7 @@
         width: 120px;
     }
 }
+
 
 @media screen and (max-width: 768px)
 {

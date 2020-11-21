@@ -1,12 +1,13 @@
 .home
 {
     display: flex;
-    height: 100vh;
+    height: 90vh;
     font-family: 'Ubuntu', sans-serif;
     color: #434343;
 
     background: url(/images/background.jpg) no-repeat center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .home-content{
