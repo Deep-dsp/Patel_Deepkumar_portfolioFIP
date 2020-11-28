@@ -1,104 +1,242 @@
-.portfolio{
+.container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
+    
+
+    width: 90%;
+    height: 90vh;
+    // background--color: yellow;
     margin: auto;
 }
 
-.gallaryTitle{
-
-
+.thumbnails {
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 
-    width: 90%;
-    // background: red;
-    height: 10vh;
-
-    p
-    {
-        font-family: 'roboto', sans-serif;
-        font-weight: 800;
-        font-size: 60px;
-        color: #c3c2c2;
-        letter-spacing: 5px;
-
-        padding-top: 20px;
-        position: relative;
-    }
-
-    p::before{
-        content: "";
-        position: absolute;
-        width: 80%;
-        height: 2px;
-        right: 0;
-        bottom: 0;
-        background-color: ff6f19;
-    }
-
 }
 
-.container
-{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-   height: 70vh;
+.show-data{
+    display: block;
 }
 
-.image-item .image img{
-    width: 100%;
+.thumbnails img{
+    width: 40%;
     height: auto;
-    object-fit: cover;
-
-    filter: grayscale(0);
-    transition: filter 0.5s ease;
+    transition: 0.5s ease;
 }
 
-.image-item:hover .image img{
-    filter: grayscale(1);
+.thumbnails img:hover{
     cursor: pointer;
-    border: 5px solid lightseagreen;
+    transform: scale(1.2);
 }
 
-.image-item{
-    position: relative;
-    width: 100%;
-    height: 100%;
-
+.carContent{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    transition: 0.5s ease;
+    // display: none;
+
+    // background: orange;
+    width: 60%;
+    margin-left: 150px;
+
+    h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+        
+    }
+
+    img{
+        width: 40%;
+        height: auto;
+    }
+
 }
 
-.text
+// Data Show Up
+
+#show-data{
+    display: block !important;
+}
+.showreel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+    margin: auto;
+
+    p{
+        font-family: "Roboto", sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+
+        span{
+            color: red;
+        }
+    }
+
+    video{
+        width: 60%;
+        height: auto;
+        padding: 150px 0;
+    }
+}
+// media queries
+
+@media screen and (max-width: 768px)
 {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: rgb(255, 251, 0);
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        // background: yellow;
+        // height: 90vh;
+    }
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
+    .thumbnails {
+        display: inline-block;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
 
-    opacity: 0;
-    transition: 0.5s ease;
+    }
+
+    .thumbnails img{
+        width: 32.5%;
+        height: auto;
+    }
+
+    .carContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        // background: orange;
+        width: 80%;
+        height: 40vh;
+        margin: auto;
+    
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            
+        }
+    
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            line-height: 25px;
+            text-align: justify;
+            margin-top: 40px;
+            
+        }
+
+        img{
+            width:50%;
+            height: auto;
+            margin-top: 40px;
+        }
+    
+    }
+    .showreel video{
+        width: 100%;
+        height: auto;
+        padding: 60px;
+    }
 }
 
-.image-item:hover .text{
-    bottom: 50%;
-    opacity: 1;
-    background: #86ddff;
-    cursor: pointer;
-}   
+@media screen and (max-width: 1000px)
+{
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        height: 90vh;
+        // background: yellow;
+    }
+
+    .thumbnails {
+        display: inline-block;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .thumbnails img{
+        width: 32.5%;
+        height: auto;
+    }
+
+    .carContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        // background: orange;
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+    
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            
+        }
+    
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: justify;
+            margin-top: 40px;
+            
+        }
+
+        img{
+            margin-top: 40px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .carContent{
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1115px)
+{
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+}
+
