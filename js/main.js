@@ -9,7 +9,7 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
 
         show_bio_data: false,
 
-        currentModelData: {},
+        myWorkData: {},
 
         props:["item"],
         template:`<img @click.prevent="thumbSelected(item)" :src="'images/' + item.images" alt="item images">`,
@@ -22,7 +22,7 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
         methods:{
             thumbSelected(item){
                 console.log("Thumbnail Selected: ", item.name);
-                
+                this.myWorkData = item;
             }
         }
     });
@@ -30,13 +30,13 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
     let vue_em = new Vue({
 
         data:{
-            message: "Hello Vue!",
+            message: "My Portfolio",
             removeAFormat:true,
             show_bio_data: false,
 
             myWork:[],
 
-            myWorkData: {}
+            // myWorkData: {}
         },
 
         mounted:function()
