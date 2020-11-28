@@ -15,8 +15,8 @@
                 <ul class="menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Models</a></li>
-                    <li><a href="contact.html">Inquiry</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="burgerMenu activeBurger">
@@ -29,16 +29,16 @@
         <main id="app">
             <section class="container">
                 <div class="thumbnails">
-                    <!-- <thumnail-card v-for="item in carModels" :item="item" :key="item.id"></thumnail-card> -->
-                    <img src="images/imgL-1.jpg" alt="">
-                    <img src="images/imgL-2.jpg" alt="">
-                    <img src="images/imgL-3.jpg" alt="">
+                    <thumnail-card v-for="item in myWork" :item="item" :key="item.id"></thumnail-card>
+                    <!-- <img @click="imgClicked" src="images/imgL-1.jpg" alt="">
+                    <img @click="imgClicked" src="images/imgL-2.jpg" alt="">
+                    <img @click="imgClicked" src="images/imgL-3.jpg" alt=""> -->
                 </div>
-                <div class="carContent" :class="{'show-data' : show_bio_data}">
+                <div class="carContent"> <!-- :class="{'show-data' : show_bio_data} -->
                     <!-- <h2>{{ currentModelData.name }}</h2>
                     <p>{{ currentModelData.about }}</p> -->
                     
-                    <h2>Product Ad</h2>
+                    <h2>{{message}}</h2>
                     <img src="images/imgL-2.jpg" alt="">
                     <p>This is a school project where I have to use all the information of kleenex product and style it according to coors beers.
 
