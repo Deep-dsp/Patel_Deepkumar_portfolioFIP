@@ -1,3 +1,6 @@
+<?php include('./includes/validation.php');?>
+
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -17,7 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.php" class="active">Contact</a></li>
                 </ul>
             </div>
             <div class="burgerMenu activeBurger">
@@ -32,13 +35,21 @@
         <div class="contactCon">
             <div class="contactTitle">Get In Touch</div>
             <div class="contactSubText">Reach Out For Any Inquiry</div>
-            <form action="#">
-                <input type="text" name="Name" placeholder="Enter Your Name" required><br><br>
-                <input type="email" name="email" placeholder="Enter Your E-mail" required><br><br>
-                <input type="text" name="subject" placeholder="Subject.."><br><br>
-                <textarea rows="10" cols="50" placeholder="Your Message.."></textarea>
+            <form action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
+                <input type="text" name="name" value="<?= $name ?>" placeholder="Enter Your Name" ><br><br>
+                <span style='color:red; font-family:"Roboto", sans-serif'><?= $name_error ?></span>
+
+                <input type="email" name="email" value="<?= $email ?>" placeholder="Enter Your E-mail"><br><br>
+                <span style='color:red; font-family:"Roboto", sans-serif'><?= $email_error ?></span>
+
+                <input type="text" name="subject" value="<?= $subject ?>" placeholder="Subject.."><br><br>
+                <span style='color:red; font-family:"Roboto", sans-serif'><?= $subject_error ?></span>
+
+                <textarea rows="10" cols="50" name="message" value="<?= $message ?>" placeholder="Your Message.."></textarea>
+                <span style='color:red; font-family:"Roboto", sans-serif'><?= $message_error ?></span>
+
+                <button class="but but1" type="submit">SEND</button>
             </form>
-            <button class="but but1">SEND</button>
         </div>
         <!-- Form -->
         <footer>
