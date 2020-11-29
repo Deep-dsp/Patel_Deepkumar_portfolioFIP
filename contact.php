@@ -1,6 +1,5 @@
 <?php include('./includes/validation.php');?>
 
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -37,18 +36,19 @@
             <div class="contactSubText">Reach Out For Any Inquiry</div>
             <form action="<?= $_SERVER['PHP_SELF'];?>" method="POST">
                 <input type="text" name="name" value="<?= $name ?>" placeholder="Enter Your Name" ><br><br>
-                <span style='color:red; font-family:"Roboto", sans-serif'><?= $name_error ?></span>
+                <span style='color:crimson; font-family:"Roboto", sans-serif'><?= $name_error ?></span>
 
                 <input type="email" name="email" value="<?= $email ?>" placeholder="Enter Your E-mail"><br><br>
-                <span style='color:red; font-family:"Roboto", sans-serif'><?= $email_error ?></span>
+                <span style='color:crimson; font-family:"Roboto", sans-serif'><?= $email_error ?></span>
 
                 <input type="text" name="subject" value="<?= $subject ?>" placeholder="Subject.."><br><br>
-                <span style='color:red; font-family:"Roboto", sans-serif'><?= $subject_error ?></span>
+                <span style='color:crimson; font-family:"Roboto", sans-serif'><?= $subject_error ?></span>
 
                 <textarea rows="10" cols="50" name="message" value="<?= $message ?>" placeholder="Your Message.."></textarea>
-                <span style='color:red; font-family:"Roboto", sans-serif'><?= $message_error ?></span>
+                <span style='color:crimson; font-family:"Roboto", sans-serif'><?= $message_error ?></span>
 
                 <button class="but but1" type="submit">SEND</button>
+                <span style='color:green; font-family:"Roboto", sans-serif; font-weight: bold; text-align:center;'><?= $success ?></span>
             </form>
         </div>
         <!-- Form -->

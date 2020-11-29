@@ -64,6 +64,11 @@
 }
 
 // contact Page Button
+@media screen and (max-width: 425px){
+    .button{
+        width: 50px;
+    }
+}
 
 @media screen and (max-width: 650px)
 {

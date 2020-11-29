@@ -90,6 +90,57 @@
 
 
 // Media Queries
+@media screen and (max-width: 320px){
+    .aboutContainer .aboutContent .aboutMe p{
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 382px){
+    .aboutWrap .aboutContainer{
+        padding-top: 100px;
+    }
+
+    .aboutWrap .aboutContainer .aboutTitle{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: -1;
+
+        p{
+            font-weight: 900;
+            font-size: 1.2rem;
+            // margin-bottom: 160px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .aboutWrap .aboutContainer{
+        padding-bottom: 150px;
+    }
+
+    .aboutWrap .aboutContainer .aboutTitle{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: -1;
+
+        p{
+            font-weight: 900;
+            font-size: 40px;
+            // margin-bottom: 160px;
+        }
+    }
+
+    .aboutContent .aboutMe p{
+        font-size: 0.95rem;
+    }
+
+}
+
+
 
 @media screen and (max-width: 650px)
 {
