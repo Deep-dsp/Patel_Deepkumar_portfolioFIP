@@ -46,6 +46,10 @@
 {
     .home-content{
         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -o-flexbox;
+        display: -moz-flexbox;
         flex-direction: column;
         justify-content: center;
         align-items: center;

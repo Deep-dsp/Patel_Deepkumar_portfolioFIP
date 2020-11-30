@@ -75,6 +75,10 @@
 
 .aboutMe {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -o-flexbox;
+    display: -moz-flexbox;
     width: 50%;
 }
 
