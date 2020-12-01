@@ -1,4 +1,9 @@
 <?php 
+    // $db_dsn = array( 
+    //     'host' => 'localhost',
+    //     'dbname' => 'portfolioDB',
+    //     'charset' => 'utf8'
+    // );
     $db_dsn = array( 
         'host' => 'localhost',
         'dbname' => 'workArea',
@@ -9,8 +14,10 @@
 
     //This is the DB credentials
 
+    // $db_user = 'root';
+    // $db_pass = ''; // windows users leave this blank
     $db_user = 'd_patel109038';
-    $db_pass = '210897Dp!'; // windows users leave this blank
+    $db_pass = '210897Dp!';
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);

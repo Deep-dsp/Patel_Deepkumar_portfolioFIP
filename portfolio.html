@@ -29,24 +29,13 @@
         <main id="app">
             <section class="container">
                 <div class="thumbnails">
-                    <thumnail-card v-for="item in myWork" :item="item" :key="item.id"></thumnail-card>
-                    <!-- <img @click="imgClicked" src="images/imgL-1.jpg" alt="">
-                    <img @click="imgClicked" src="images/imgL-2.jpg" alt="">
-                    <img @click="imgClicked" src="images/imgL-3.jpg" alt=""> -->
+                    <thumnail-card @showmydata="thumbSelected" v-for="item in carModels" :item="item" :key="item.id"></thumnail-card>
+                    <div class="overlay"></div>
                 </div>
-                <div class="carContent">
-                    <!-- :class="{'show-data' : show_bio_data}"</h2> -->
-                    <!-- <h2>{{ myWorkData.name }} 
-                    <p>{{ myWorkData.about }}</p> -->
-                    
-                    <h2>{{message}}</h2>
-                    <img src="images/imgL-2.jpg" alt="">
-                    <p>This is a school project where I have to use all the information of kleenex product and style it according to coors beers.
-
-                        Here, I have created label, 3D bottle and advertisement poster as you can see above.
-                        
-                        Software used: Adobe Photoshop, Adobe Illustrator, MAXON Cinema4D 
-                    </p>
+                <div class="carContent hideData" :class="{'show-data' : show_bio_data}">    
+                        <h2>{{ currentModelData.name }}</h2>
+                        <img :src="'images/' + currentModelData.images" alt="">
+                        <p>{{ currentModelData.about }}</p>
                 </div>
             </section>
             <section class="showReel">

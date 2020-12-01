@@ -3,26 +3,21 @@ import './modules/burgerMenu.js';
 import { fetchData, postData } from "./modules/TheDataMiner.js";
 
 
-(() =>{
+(() => {
 
     Vue.component("thumnail-card", {
 
-        show_bio_data: false,
-
-        myWorkData: {},
-
         props:["item"],
-        template:`<img @click.prevent="thumbSelected(item)" :src="'images/' + item.images" alt="item images">`,
+        template:`<img @click="logClicked" :src="'images/' + item.images" alt="item images">`,
 
         mounted:function(){
             console.log(`loaded a ${this.item.name}'s image`);
-            // console.log(`${this.item.images}`);
         },
 
         methods:{
-            thumbSelected(item){
-                console.log("Thumbnail Selected: ", item.name);
-                this.myWorkData = item;
+            logClicked(){
+                console.log("Image Clicked ", this.item.name);
+                this.$emit("showmydata", this.item);
             }
         }
     });
@@ -30,13 +25,13 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
     let vue_em = new Vue({
 
         data:{
-            message: "My Portfolio",
+            message: "Hello Vue!",
             removeAFormat:true,
             show_bio_data: false,
 
-            myWork:[],
+            carModels:[],
 
-            // myWorkData: {}
+            currentModelData: {}
         },
 
         mounted:function()
@@ -45,15 +40,20 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
 
             fetchData("./includes/index.php")
             .then(data=>{
-                    data.forEach(myData=>this.myWork.push(myData));
+                    data.forEach(prof=>this.carModels.push(prof));
                 })
                 .catch(err=>console.error(err));
+
         },
 
-        methods:{
-            imgClicked(item)
-            {
-                console.log("Image Selected ", item.name);
+        methods:
+        {
+
+            thumbSelected(item){
+                console.log("Thumbnail Selected: ", item.name);
+                this.show_bio_data = this.show_bio_data ? false:true;
+                this.currentModelData = item;
+                // console.log("CURRENT : ", this.currentModelData.images);
             }
         }
 
