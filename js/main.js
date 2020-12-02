@@ -25,7 +25,8 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
     let vue_em = new Vue({
 
         data:{
-            message: "Hello Vue!",
+            text: "click on images for more details",
+            message:"My Design Portfolio",
             removeAFormat:true,
             show_bio_data: false,
 
@@ -53,8 +54,8 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
                 console.log("Thumbnail Selected: ", item.name);
                 // this.show_bio_data = this.show_bio_data ? false:true;
                 this.show_bio_data = true;
+                this.removeAFormat = false;
                 this.currentModelData = item;
-                // console.log("CURRENT : ", this.currentModelData.images);
             }
         }
 
