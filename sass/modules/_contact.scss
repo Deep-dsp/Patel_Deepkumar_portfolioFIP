@@ -1,0 +1,46 @@
+.contactCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1920px;
+    height: 90vh;
+}
+
+.contactTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #434343;
+}
+
+.contactSubText{
+    font-family: 'Poppins', sans-serif;
+    font-size: .95rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    // background: red;
+    margin-top: 40px;
+        input
+        {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #434343;
+            padding: 10px;
+        }
+        textarea{
+            border: 1px solid #434343;
+            border-radius: 5px;
+        }
+
+}
+  
+  

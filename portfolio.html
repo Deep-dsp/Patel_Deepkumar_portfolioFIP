@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deep Patel</title>
+        <link rel="stylesheet" href="css/master.css" media="screen">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="index.html"><img src="./images/black_Logo.svg" alt=""></a></div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="burgerMenu activeBurger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </nav>
+
+        <main id="app">
+            <section class="container">
+                <div class="thumbnails">
+                    <thumnail-card @showmydata="thumbSelected" v-for="item in carModels" :item="item" :key="item.id"></thumnail-card>
+                    <div class="overlay"></div>
+                </div>
+                <div class="carContent hideData" :class="{'show-data' : show_bio_data}">    
+                        <h2>{{ currentModelData.name }}</h2>
+                        <img :src="'images/' + currentModelData.images" alt="">
+                        <p>{{ currentModelData.about }}</p>
+                </div>
+            </section>
+            <section class="showReel">
+                <p class="reel">MOTION GRAPHICS <span>SHOWREEL</span></p>
+                <video controls>
+                    <source src="video/demoreel.webm" type="video/webm">
+                </video>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footerContainer">
+
+                <div class="logoF"><a href="portfolio.html"><img src="./images/White_Logo.svg" alt=""></a></div>
+                <div class="tagLine">Living, learning, & leveling up<br> one day at a time.</div>
+                <div class="media-link">
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-artstation"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+                <ul class="menuFooter">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p class="copyright">&copy; copyrights reserved 2020.</p>
+                <div class="line"></div>
+                
+            </div>
+        </footer>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

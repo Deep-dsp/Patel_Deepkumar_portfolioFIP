@@ -1,0 +1,131 @@
+.home
+{
+    display: flex;
+    height: 90vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: #434343;
+
+    background: url(/images/background.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-content{
+    margin-bottom: 125px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1
+{
+    font-size: 27px;
+}
+
+.home .home-content .text-2
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3
+{
+    font-size: 25px;
+    padding: 10px 0 0 180px;
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+}
+
+// Media Queries
+@media screen and (max-width: 382px)
+{
+    .home-content{
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -o-flexbox;
+        display: -moz-flexbox;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .home .home-content div.text-1{
+        font-size: 2vw;
+    }
+
+    .home .home-content div.text-2
+    {
+        
+        font-size: 2vw;
+        // font-weight: 600;
+    }
+
+    .home .home-content div.text-3
+    {
+        font-size: 4vw;
+        margin: 15px 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 493px)
+{
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .home .home-content div.text-1{
+        font-size: 4vw;
+    }
+
+    .home .home-content div.text-2
+    {
+        
+        font-size: 7.5vw;
+        font-weight: 600;
+    }
+
+    .home .home-content .text-3
+    {
+        font-size: 3.5vw;
+        margin: 15px 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-content .text-2
+    {
+        font-size: 50px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+
+    .home .home-content .text-3
+    {
+        font-size: 20px;
+        margin: 15px 0;
+        padding: 0;
+    }
+}
