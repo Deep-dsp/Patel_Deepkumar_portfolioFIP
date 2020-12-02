@@ -1,9 +1,13 @@
 <?php 
+    // localhost 
     // $db_dsn = array( 
     //     'host' => 'localhost',
     //     'dbname' => 'portfolioDB',
     //     'charset' => 'utf8'
     // );
+
+    // CPanel Data
+    
     $db_dsn = array( 
         'host' => 'localhost',
         'dbname' => 'workArea',
@@ -12,10 +16,12 @@
 
     $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
 
-    //This is the DB credentials
+    //localhost DB credentials
 
     // $db_user = 'root';
     // $db_pass = ''; // windows users leave this blank
+
+    // C-Panel
     $db_user = 'd_patel109038';
     $db_pass = '210897Dp!';
 

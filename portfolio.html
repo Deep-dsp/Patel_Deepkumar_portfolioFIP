@@ -37,6 +37,10 @@
                         <img :src="'images/' + currentModelData.images" alt="">
                         <p>{{ currentModelData.about }}</p>
                 </div>
+                <div id="openTitle" v-show="removeAFormat">
+                    <h2>{{message}}</h2>
+                    <p>{{text}}</p>
+                </div>
             </section>
             <section class="showReel">
                 <p class="reel">MOTION GRAPHICS <span>SHOWREEL</span></p>
