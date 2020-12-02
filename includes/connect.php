@@ -7,6 +7,7 @@
     // );
 
     // CPanel Data
+    
     $db_dsn = array( 
         'host' => 'localhost',
         'dbname' => 'workArea',
@@ -17,8 +18,8 @@
 
     //localhost DB credentials
 
-    $db_user = 'root';
-    $db_pass = ''; // windows users leave this blank
+    // $db_user = 'root';
+    // $db_pass = ''; // windows users leave this blank
 
     // C-Panel
     $db_user = 'd_patel109038';
