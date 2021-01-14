@@ -1,5 +1,6 @@
 import './modules/typeWriter.js';
 import './modules/burgerMenu.js';
+import './modules/gsaphome.js';
 import { fetchData, postData } from "./modules/TheDataMiner.js";
 
 
