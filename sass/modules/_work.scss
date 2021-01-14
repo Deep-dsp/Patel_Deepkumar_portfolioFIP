@@ -30,16 +30,20 @@
     }
 }
 
-.gallery{
+.portfolio{
     width: 80vw;
     height: 90vh;
     // background: red;
     position: absolute;
     left: 20vw;
+}
 
+.gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+
+    padding: 60px 10px;
     div.box{
         width: 100%;
     }
@@ -50,4 +54,94 @@
     height: 300px;
     background: lightgrey;
     border: 1px solid #000;
+}
+
+.show-reel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    // background: red;
+
+    margin-top: 150px;
+
+    video{
+        width: 80%;
+        height: auto;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        padding: 10px 0;
+        margin-left: 160px;
+        -webkit-text-stroke: 2px #434343;
+        color: rgb(231, 231, 231)
+    }
+}
+
+span.reel
+{
+    color: red;
+    -webkit-text-stroke: 1px red;
+}
+
+// Media Queries
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+
+    .portfolioText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20vh;
+        width: 100%;
+
+        p{
+            font-weight: 600;
+            font-size: 50px;
+            padding: 10px 0;
+            // margin-left: 160px;
+            -webkit-text-stroke: 2px #434343;
+            color: white;
+            margin-right: 100px;
+            transform: rotate(0deg);
+        }
+    }
+
+    .portfolio{
+        width: 100%;
+        // height: 90vh;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+    }
+
+    .gallery{
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+    .show-reel 
+    {
+        p{
+            font-weight: 400;
+            font-size: 30px;
+            // padding: 10px 0;
+            color: #434343;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
 }
