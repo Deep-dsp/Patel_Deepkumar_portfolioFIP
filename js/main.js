@@ -57,6 +57,11 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
                 this.show_bio_data = true;
                 this.removeAFormat = false;
                 this.currentModelData = item;
+            },
+
+            lightbox(){
+                console.log('image clicked');
+
             }
         }
 
