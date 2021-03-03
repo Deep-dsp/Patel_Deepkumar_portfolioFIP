@@ -30,42 +30,39 @@
 
         <main id="app">
             <section class="container">
-                <div class="portfolioText">
-                    <p>PORTFOLIO</p>
-                </div>
                 <div class="portfolio">
                     <div class="gallery">
-                        <img src="./images/Thumbnails/G_bleach.png" alt="" v-on:click="lightbox();">
-                        <img src="./images/Thumbnails/G_dubai.png" alt="">
-                        <img src="./images/Thumbnails/G_gymboree.png" alt="">
-                        <img src="./images/Thumbnails/G_timhortons.png" alt="">
-                        <img src="./images/Thumbnails/T_barrel.png" alt="">
-                        <img src="./images/Thumbnails/T_beertable.png" alt="">
-                        <img src="./images/Thumbnails/T_kleenex.png" alt="">
-                        <img src="./images/Thumbnails/T_mike.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/G_bleach.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/G_dubai.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/G_gymboree.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/G_timhortons.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/T_barrel.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/T_beertable.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/T_kleenex.png" alt="">
+                        <img data-model-target=".first-eight-pop" src="./images/Thumbnails/T_mike.png" alt="">
                     </div>
-                    <div class="show-reel">
+                    <!-- <div class="show-reel">
                         <p>MOTION GRAPHICS <span class="reel">SHOWREEL</span></p>
                         <video controls>
                             <source src="video/demoreel.webm" type="video/webm">
                         </video>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <section class="first-eight-pop">
-                <div class="cross-button">&#xd7;</div>
+                <div data-close-button class="cross-button">&#xd7;</div>
                 <div class="product-section">
                     <img src="/images/collatoral.png" alt="">
                     <div class="product-about">
-                        <p>Collatoral Design</p> <!-- Dynamic Title and about-->
+                        <p>Collatoral Design</p> 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolores eum aspernatur provident ullam nihil necessitatibus sed rem, repellat ut aliquam officia repellendus eius natus quas vitae beatae excepturi inventore reprehenderit! Veniam ullam odit rerum cumque ipsa dolores laboriosam rem soluta est pariatur labore .<p>
                     </div>
                     <div class="product-about">
-                        <p>Software Used:</p> <!-- Software used-->
+                        <p>Software Used:</p> 
                         <p>Adobe Photoshop, Adobe Illustraor<p>
                     </div>
                     <div class="product-about">
-                        <p>Link:<a href="#">  Click Here</a></p> <!-- Link -->
+                        <p>Link:<a href="#">  Click Here</a></p> 
                     </div>
                 </div>
             </section>
@@ -93,6 +90,7 @@
                 
             </div>
         </footer> -->
-        <script type="module" src="js/main.js"></script>
+        <script defer type="module" src="js/master.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     </body>
 </html>

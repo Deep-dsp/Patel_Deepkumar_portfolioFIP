@@ -59,9 +59,8 @@ import { fetchData, postData } from "./modules/TheDataMiner.js";
                 this.currentModelData = item;
             },
 
-            lightbox(){
+            light(){
                 console.log('image clicked');
-
             }
         }
 
