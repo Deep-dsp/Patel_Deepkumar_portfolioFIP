@@ -1,5 +1,3 @@
-import './modules/burgerMenu.js';
-
 const imgset = document.querySelectorAll('[data-model-target]');
 const close = document.querySelectorAll('[data-close-button]');
 

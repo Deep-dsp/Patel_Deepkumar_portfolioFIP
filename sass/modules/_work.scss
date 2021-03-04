@@ -1,12 +1,21 @@
 .container{
     display: flex;
-    width: 100%;
+    width: 60%;
     height: 90vh;
     // background: lightblue;
     position: relative;
     top: 0;
     left: 0;
+
+    margin: auto;
+
+    // transform:translateX(0);
+    // transition: transform 1s ease-out;
 }
+
+// .container.slide-out{
+//     transform:translateX(-100%);
+// }
 
 .portfolioText{
     width: 20vw;

@@ -59,17 +59,15 @@
                 <div class="logoF"><a href="#"><img src="./images/White_Logo.svg" alt=""></a></div>
                 <div class="tagLine">Living, learning, & leveling up<br> one day at a time.</div>
                 <div class="media-link">
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-artstation"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="far fa-envelope"></i>
+                    <a href="https://www.artstation.com/deep_fxanim"><i class="fab fa-artstation"></i></a>
+                    <a href="https://www.behance.net/deepkumarpatel1"><i class="fab fa-behance"></i></a>
+                    <a href="https://github.com/Deep-dsp?tab=repositories"><i class="fab fa-github"></i></a>
                 </div>
                 <ul class="menuFooter">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="work.html">Portfolio</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
                 <p class="copyright">&copy; copyrights reserved 2020.</p>
                 <div class="line"></div>
