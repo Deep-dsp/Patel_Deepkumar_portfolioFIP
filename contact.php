@@ -49,7 +49,7 @@
                 <span style='color:crimson; font-family:"Roboto", sans-serif'><?= $message_error ?></span>
 
                 <button class="but but1" type="submit">SEND</button>
-                <span style='color:green; font-family:"Roboto", sans-serif; font-weight: bold; text-align:center;'><?= $success ?></span>
+                <span style='color:green; font-family:"Roboto", sans-serif; font-weight: bold; text-align:center;'><?php echo $success ?></span>
             </form>
         </div>
         <!-- Form -->

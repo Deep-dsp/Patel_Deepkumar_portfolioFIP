@@ -3,7 +3,7 @@
     // print_r($_POST);
     // Variables 
     $name_error = $email_error = $subject_error = $message_error = "";
-    $name = $email = $subject = $message = '';
+    $name = $email = $subject = $message = $success = '';
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
